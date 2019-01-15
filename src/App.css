@@ -1,32 +1,47 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+body{
+    font-family: 'Nunito', sans-serif;
+    background: #F6F8F8;            
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.App-header{
+    text-align: center;
+    border-bottom: 2px solid gray;
+    font-size: 18px;
+}
+.crypto {
+    list-style-type: none;
+    display: inline-flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* ------------- */
+.currency {
+    padding: 1rem 2rem 2rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    min-width: 9rem;
+    border: solid 1px rgba(0, 0, 0, 0.05);
+    display: block;
 }
 
-.App-link {
-  color: #61dafb;
+.currency p {
+    color: rgba(0, 0, 0, 0.75);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.currency-name {
+    font-size: 1.25rem;
+}
+
+ul:nth-of-type(2n) {
+    background-color: #fbe2c3;
+    border-bottom: solid 4px #f7931a;
+}
+
+li:nth-of-type(2n-1) {
+    background-color: #ffffff;
+    border-bottom: solid 4px #000;
+    box-shadow: 0 0 .5rem #020202;
 }
